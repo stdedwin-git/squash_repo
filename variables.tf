@@ -79,3 +79,13 @@ variable "storage_admin_role" {
     description = "The role for storage admin"
     type        = string
 }
+
+variable "bucket_name" {
+    description = "The name of the storage bucket"
+    type        = string
+}
+
+variable "bucket_role" {
+    description = "The role to assign to the service account for the storage bucket"
+    type        = string
+}
