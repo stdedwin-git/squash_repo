@@ -65,10 +65,10 @@ The following variables are used in this configuration:
 
 ```bash
 terraform init
+```
 ```bash
 terraform plan -out=plan.out
 ```
 ```bash
 terraform apply plan.out
 ```
-terraform apply
