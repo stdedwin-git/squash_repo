@@ -10,3 +10,17 @@ resource "google_project" "sample_project" {
     org_id     = "123456789012" # Replace with your organization ID
     billing_account = "000000-000000-000000" # Replace with your billing account ID
 }
+resource "google_storage_bucket" "sample_bucket" {
+    name          = "sample-bucket"
+    location      = "US"
+    storage_class = "STANDARD"
+
+    lifecycle_rule {
+        action {
+            type = "Delete"
+        }
+        condition {
+            age = 365
+        }
+    }
+}
