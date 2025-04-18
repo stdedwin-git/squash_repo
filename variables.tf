@@ -89,3 +89,20 @@ variable "bucket_role" {
     description = "The role to assign to the service account for the storage bucket"
     type        = string
 }
+
+variable "zone" {
+    description = "The GCP zone to deploy resources in"
+    type        = string
+    default     = "us-central1-a"
+}
+
+variable "instance_name" {
+    description = "The name of the VM instance"
+    type        = string
+}
+
+variable "machine_type" {
+    description = "The machine type for the VM instance"
+    type        = string
+    default     = "e2-medium"
+}
